@@ -1,0 +1,293 @@
+.main11>img{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 200px;
+}
+.main11{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
+}
+.navbar{
+    display: flex;
+    list-style-type: none;
+    padding: 20px;
+}
+li a{
+    text-decoration: none;
+    padding: 20px;
+    display: flex;
+   color:#4d4b5a;
+}
+.sidebar{
+    display: none;
+}
+.logo>img{
+ 
+  width: 100px;
+}
+.heading>h1{
+  text-align: center;
+  color: #103178;
+  padding: 50px;
+}
+
+.first>img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: 100%;
+    transition: all 4s ease-in-out;
+  }
+  .first:hover img{
+  object-fit: cover;
+  }
+  .stacked{
+    display: grid;
+  }
+  .stacked>*{
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+  .gridview{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  .first-content{
+    padding: 15px;
+  }
+  .first-content>.new{
+    color: white;
+    background-color: green;
+    padding: 10px;
+    width: 50px;
+    border-radius: 50px;
+    justify-content: center;
+    display: flex;
+  }
+  .first-box{
+    font-size: 25px;
+    color: #103178;
+    padding-top: 20px;
+  }
+  .second-box{
+    font-size: 25px;
+    color:  #103178;
+  
+  }
+  .third-box{
+    font-size: 25px;
+    color: #103178;
+  }
+  .last-price{
+    color: #ffc800;
+    font-size: 40px;
+    padding-top: 30px;
+  }
+  .first-content>#btn2{
+    padding-top: 50px;
+  }
+  .first-content>#btn2>button{
+    background-color:#103178;
+    font-size: 20px;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 20px;
+  }
+  /* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Specific section styles */
+#about h1 {
+  font-size: 28px;
+}
+
+#about p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+section ul {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #222;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+.hero-section6{
+    background-color: #717171;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #footer-main{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hero-section6-main{
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 80px;
+    
+  }
+  .footer1{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main6{
+    display: flex;
+    align-items: center;
+   justify-content: space-evenly;
+  
+  }
+  .main6-email>input{
+    padding: 10px;
+    border: none;
+  }
+  .main6-email>button{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+  }
+  .main6>img{
+    width: 100px;
+  }
+  .main6>p{
+   color: white;
+  }
+  .main6-email{
+    display: flex;
+   align-items: center;
+  }
+  .footer1>li a{
+    color: white;
+  }
+  
+  .footer2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-color: #717171;
+  }
+  #icons1{
+    padding: 0px 20px;
+  }
+@media screen and (max-width:600px) and (min-width:100px) {
+
+    .main11{
+        display: block;
+      
+    }
+    .navbar{
+        flex-direction: column;
+        display: none;
+    }
+    li a{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .sidebar{
+      display: flex;
+      justify-content:flex-end;
+      padding: 0px 60px 0px 0px;
+      align-items: center;
+       cursor: pointer;
+    }
+    .sidebar>.fa-bars{
+        display: block;
+        font-size: 30px;
+        color: black;
+    }
+  
+   .sidebar>.fa-xmark{
+       display: none;
+       font-size: 30px;
+       color: black;
+       
+   }
+  }

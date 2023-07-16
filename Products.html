@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Products.css">
+    <script src="https://kit.fontawesome.com/d76236df91.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<script>
+    function togglesidebar(){
+        const barsIcon=document.getElementsByClassName('fa-bars')[0];
+        const markIcon=document.getElementsByClassName('fa-xmark')[0];
+        const navbar=document.getElementsByClassName('navbar')[0];
+        if(navbar.style.display==='block'){
+            navbar.style.display = "none";
+            barsIcon.style.display = "block";
+            markIcon.style.display = "none";
+        }
+        else{
+            navbar.style.display = "block";
+            barsIcon.style.display = "none";
+            markIcon.style.display = "block";
+        }
+    }
+</script>
+<body>
+    <div class="main">
+        <div class="main11">
+            <img src="./Images/LOGO FILE_orginal_orginal.png" alt="Profile-Pic">
+            <div class="sidebar" onclick="togglesidebar()">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <div class="navbar">
+                <li><a href="./">Home</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./Services.html">Services</a></li>
+                <li><a href="./Products.html">Products</a></li>
+                <li><a href="./Contact.html">Contact US</a></li>
+            </div>
+        </div>
+    </div>
+    <div class="heading">
+        <h1>Our Products</h1>
+    </div>
+    <div class="hero">
+        <div class="gridview">
+            <div class="first stacked">
+                <img src="./" alt="">
+                <div class="first-content">
+                   
+                    <p class="first-box">Medicine <br>
+                        Bottle</p>
+                    <div id="btn2">
+                        <button>More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="first stacked">
+                <img src="./g" alt="">
+                <div class="first-content">
+                    <p class="second-box">Medicine <br>
+                         Bottle</p>
+                   
+                    <div id="btn2">
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="first stacked">
+                <img src="./" alt="">
+                <div class="first-content">
+                    <p class="third-box">Medicine <br>
+                        Bottle</p>
+                 
+                    <div id="btn2">
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-section6">
+        <div class="hero-section6-main">
+            <div class="main6">
+                <img src="./Images/LOGO FILE_orginal_orginal.png" alt="">
+                <p>We believe in Simple, Creative & <br>
+                    Flexible Design Standards.
+
+                    Headquarters: <br>
+                    795 Folsom Ave, Suite 600 <br>
+                    San Francisco, CA 94107 <br>
+                    Phone: (1) 8547 632521 <br>
+                    Fax: (1) 11 4752 1433 <br>
+                    Email: info@canvas.com</p>
+            </div>
+            <div class="footer1">
+
+                <li><a href="./">Home</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./Services.html">Services</a></li>
+                <li><a href="./Products.html">Products</a></li>
+                <li><a href="./Contact.html">Contact US</a></li>
+            </div>
+            <div class="main6-email">
+                <span></span><input type="email" placeholder="Enter your Email">
+                <button>Subscribe</button>
+
+
+            </div>
+        </div>
+        <div id="footer-main">
+            <div class="footer2">
+                <p> Copyright &copy;2022 ThemexHunter. All Rights Reserved</p>
+                <div id="icons1">
+                    <i class="fa-brands fa-square-facebook"><a href="./"></a></i>
+                    <i class="fa-brands fa-instagram"><a href="./"></a></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
