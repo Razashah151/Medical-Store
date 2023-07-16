@@ -1,0 +1,304 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/d76236df91.js" crossorigin="anonymous"></script>
+    <title>Corporate Website</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+            // Event listeners for next and previous buttons
+            document.querySelector(".prev").addEventListener("click", function () {
+                plusSlides(-1);
+            });
+
+            document.querySelector(".next").addEventListener("click", function () {
+                plusSlides(1);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- <div class="main">
+        <div class="main11">
+            <img src="./Images/LOGO FILE_orginal_orginal.png" alt="Profile-Pic">
+        <div class="sidebar"onclick="togglesidebar()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <div class="navbar">
+                <li><a href="./">Home</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./Services.html">Services</a></li>
+                <li><a href="./Products.html">Products</a></li>
+                <li><a href="#section2">Contact Us</a></li>
+            </div>
+            </div>
+    </div> -->
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+
+            <img src="./Images/bg5.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./Images/2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./Images/bg4.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="hero-section2">
+        <div class="main2">
+            <div class="main2-content">
+                <h3>ABOUT US</h3>
+                <h2>AVEEN INTERNATIONAL <br>
+                    (HEALTHCARE TECHNOLOGY TRADING)</h2>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br>
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <br>
+                    enim ad minim veniam. Lorem ipsum dolor sit amet, <br>
+                    consectetur adipisicing elit",</p><br>
+                <span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br>
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                <div class="btn2">
+                    <button id="btn2">Hire Us</button>
+                </div>
+            </div>
+            <div class="main2-image">
+                <img src="./Images/2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="main7-content1">
+        <h3>Even More Feature Rich</h3>
+        <p>Philanthropy convener livelihoods, initiative end hunger gender rights local. <br>
+            John Lennon storytelling; advocate, altruism impact catalyst.</p>
+    </div>
+    <div class="hero-section7">
+
+        <div class="main7">
+
+            <div class="main7-content2">
+                <h4>Boxed and Wide Layouts</h4>
+                <p>Stretch your Website to the Full Width or <br>
+                    make it boxed to surprise your visitors.</p>
+                <h4>Boxed and Wide Layouts</h4>
+                <p>Stretch your Website to the Full Width or <br>
+                    make it boxed to surprise your visitors.</p>
+                <h4>Boxed and Wide Layouts</h4>
+                <p>Stretch your Website to the Full Width or <br>
+                    make it boxed to surprise your visitors.</p>
+            </div>
+            <div class="main7-content3">
+                <img src="./Images/iphone7.png" alt="">
+            </div>
+            <div class="main7-content4">
+                <h4>Boxed and Wide Layouts</h4>
+                <p>Stretch your Website to the Full Width or <br>
+                    make it boxed to surprise your visitors.</p>
+                <h4>Boxed and Wide Layouts</h4>
+                <p>Stretch your Website to the Full Width or <br>
+                    make it boxed to surprise your visitors.</p>
+                <h4>Boxed and Wide Layouts</h4>
+                <p>Stretch your Website to the Full Width or <br>
+                    make it boxed to surprise your visitors.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="hero-section8">
+        <div class="main8">
+            <div class="main8-content1">
+                <img src="./Images/3.jpg" alt="">
+            </div>
+            <div class="main8-content2">
+                <h3>Walkthrough Videos and Demos</h3>
+                <img src="./Images/2.jpg" alt="">
+                <p>Democracy inspire breakthroughs, Rosa Parks; inspiration raise <br>
+                    awareness natural resources. Governance impact; transformative <br>
+                    donation philanthropy, respect reproductive.</p>
+            </div>
+        </div>
+    </div>
+    <div class="hero-section3">
+        <div class="main3">
+            <h5>Services</h5>
+            <h2>What We Offer</h2>
+            <div class="blocks">
+                <div class="first-block">
+                    <h3>Responsive Layout</h3>
+                    <span>Powerful Layout with Responsive functionality <br>
+                        that can be adapted to any screen size.</span>
+                    <h3>Responsive Layout</h3>
+                    <span>Powerful Layout with Responsive functionality <br>
+                        that can be adapted to any screen size.</span>
+                    <h3>Responsive Layout</h3>
+                    <span>Powerful Layout with Responsive functionality <br>
+                        that can be adapted to any screen size.</span>
+                </div>
+                <div class="first-block">
+                    <h3>Retina Ready Graphics</h3>
+                    <span>Looks beautiful & ultra-sharp on Retina <br>
+                        Displays with Retina Icons, Fonts & Images.</span>
+                    <h3>Retina Ready Graphics</h3>
+                    <span>Looks beautiful & ultra-sharp on Retina <br>
+                        Displays with Retina Icons, Fonts & Images.</span>
+                    <h3>Retina Ready Graphics</h3>
+                    <span>Looks beautiful & ultra-sharp on Retina <br>
+                        Displays with Retina Icons, Fonts & Images.</span>
+                </div>
+                <div class="first-block">
+                    <h3>Powerful Performance</h3>
+                    <span>Optimized code that are completely <br>
+                        customizable and deliver unmatched fast <br>
+                        performance.</span>
+                    <h3>Powerful Performance</h3>
+                    <span>Optimized code that are completely <br>
+                        customizable and deliver unmatched fast <br>
+                        performance.</span>
+                    <h3>Powerful Performance</h3>
+                    <span>Optimized code that are completely <br>
+                        customizable and deliver unmatched fast <br>
+                        performance.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-section9">
+        <h3>Our Latest Works</h3>
+        <div class="main9">
+            <div class="main9-images">
+                <img src="./Images/iphone7.png" alt="">
+                <img src="./Images/iphone7.png" alt="">
+                <img src="./Images/iphone7.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="hero-section8">
+        <div class="main8">
+            <div class="main8-content1">
+                <img src="./Images/iphone7.png" alt="">
+            </div>
+            <div class="main8-content2">
+                <h3>Walkthrough Videos and Demos</h3>
+                
+                <p>Democracy inspire breakthroughs, Rosa Parks; inspiration raise <br>
+                    awareness natural resources. Governance impact; transformative <br>
+                    donation philanthropy, respect reproductive.</p>
+            </div>
+        </div>
+    </div>
+    <div class="hero-section5">
+        <div class="two-columns">
+            <div class="main5">
+                <span>CONTACT US</span><br>
+                <span>Request A Call Back <br>
+                    Appointment?</span><br>
+                <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br>
+                    nonumy eirmod tempor invidunt ut labore et dolore magna <br>
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo <br>
+                    duo dolores et ea rebum. Stet clita kasd gubergren, no sea <br>
+                    takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum <br>
+                    dolor sit amet, consetetur sadipscing elitr.</span>
+
+                <div class="btn3">
+                    <button id="btn3">Appointment</button>
+                </div>
+            </div>
+            <div class="form1">
+                <textarea name="" id="" cols="30" rows="10" placeholder="write.."></textarea><br>
+                <input type="text" placeholder="First Name.."><br>
+                <input type="text" placeholder="Last Name.."><br>
+                <input type="email" placeholder="Email Address"><br>
+                <div class="btn4">
+                    <button id="btn4">Send Message</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="hero-section6">
+        <div class="main6">
+            <footer>
+                <div class="footer1">
+                    <h3>Contact Us</h3>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./">About Us</li>
+                    <li><a href="./">Service</a></li>
+                    <li><a href="./">Blog</a></li>
+                    <li><a href="./">Contact Us</a></li>
+                </div>
+                <div class="footer2">
+                    <span>Copyright &copy;2022ThemexHunter.All Rights Reserved</span>
+                    <span>
+                        <i class="fa-brands fa-square-facebook"><a href="./"></a></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </span>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
