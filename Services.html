@@ -1,117 +1,139 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Aveen International Group</title>
-  <link rel="stylesheet" href="./Services.css">
-  <script src="https://kit.fontawesome.com/d76236df91.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Images/LOGO FILE_orginal_orginal.png">
+    <script src="https://kit.fontawesome.com/d76236df91.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Services.css">
+    <title>Services</title>
+
 </head>
-<script>
-    function togglesidebar(){
-        const barsIcon=document.getElementsByClassName('fa-bars')[0];
-        const markIcon=document.getElementsByClassName('fa-xmark')[0];
-        const navbar=document.getElementsByClassName('navbar')[0];
-        if(navbar.style.display==='block'){
-            navbar.style.display = "none";
-            barsIcon.style.display = "block";
-            markIcon.style.display = "none";
-        }
-        else{
-            navbar.style.display = "block";
-            barsIcon.style.display = "none";
-            markIcon.style.display = "block";
-        }
-    }
-</script>
 <body>
-    <div class="main">
-        <div class="main11">
-            <img src="./Images/LOGO FILE_orginal_orginal.png" alt="Profile-Pic">
-            <div class="sidebar" onclick="togglesidebar()">
-                <i class="fa-sharp fa-solid fa-bars"></i>
-                <i class="fa-sharp fa-solid fa-xmark"></i>
-            </div>
-            <div class="navbar">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./About.html">About Us</a></li>
-                <li><a href="./Services.html">Services</a></li>
-                <li><a href="./Products.html">Products</a></li>
-                <li><a href="./Contact.html">Contact US</a></li>
+  <script>
+      function togglesidebar() {
+          const barsIcon = document.getElementsByClassName('fa-bars')[0];
+          const markIcon = document.getElementsByClassName('fa-xmark')[0];
+          const navbar = document.getElementsByClassName('navbar')[0];
+          if (navbar.style.display === 'block') {
+              navbar.style.display = "none";
+              barsIcon.style.display = "block";
+              markIcon.style.display = "none";
+          }
+          else {
+              navbar.style.display = "block";
+              barsIcon.style.display = "none";
+              markIcon.style.display = "block";
+          }
+      }
+  </script>
+  <body>
+      <div class="main">
+          <div class="main11">
+              <img src="./Images/LOGO FILE_orginal_orginal.png" alt="Profile-Pic">
+              <div class="sidebar" onclick="togglesidebar()">
+                  <i class="fa-sharp fa-solid fa-bars"></i>
+                  <i class="fa-sharp fa-solid fa-xmark"></i>
               </div>
-        </div>
-    </div>
-    <div class="hero-section1">
-        <div class="main1">
-            <div class="logo">
-                <img src="./Images/LOGO FILE_orginal_orginal.png" alt="">
-            </div>
-            <div class="heading">
-                <h1>Services</h1>
-            </div>
-        </div>
-
-    </div>
+              <div class="navbar">
+                  <ul>
+                      <li><a href="./index.html">Home</a></li>
+                      <li class="dropdown2">
+                          <a href="javascript:void(0)" class="dropbtn">About Us</a>
+                          <div class="dropdown-content">
+                              <a href="./AveenPharmacy.html">Aveen Pharmacy</a>
+                              <a href="./AveenC-store.html">Aveen C-Store</a>
+                              <a href="./AveenInternationalDistribution.html">Aveen International Distribution</a>
+                              <a href="./AveenInitiative.html">Aveen Initiative</a>
+                          </div>
+                      </li>
+                      <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn">What We Do</a>
+                          <div class="dropdown-content">
+                              <a href="./Services.html">Services</a>
+                              <a href="./Products.html">Products</a>
+                          </div>
+                      </li>
+                      <li><a href="./Contact.html">Contact US</a></li>
+                      <li><a href="./Employees.html">Employees</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      
+      <div class="hero-section1">
+          <div class="main1">
+              
+              <div class="heading">
+                  <h1>Services</h1>
+              </div>
+          </div>
   
-    <section id="health-assessment">
-      <h2>Preliminary Health Assessment</h2>
-      <p>We can perform your initial health assessment:</p>
-      <ul>
-        <li>Blood Pressure</li>
-        <li>Blood Glucose / Sugar Level</li>
-        <li>Body Weight</li>
-      </ul>
-      <p>Come and visit us!</p>
-    </section>
-
-    <section id="monthly-medicines-delivery">
-      <h2>Monthly Medicines Delivery</h2>
-      <p>Send us your prescription, and we will deliver your medicines according to the desired dosage and inform you when your next supplies are due.</p>
-    </section>
-
-    <section id="home-delivery">
-      <h2>Home Delivery</h2>
-      <p>We will deliver our products to your doorstep. Just give us a call. For orders above PKR 5,000, delivery is free. For orders below 5,000, charges will be at actual.</p>
-    </section>
+      </div>
+    
+      <section id="health-assessment">
+        <h2>Preliminary Health Assessment</h2>
+        <p>We can perform your initial health assessment:</p>
+        <ul>
+          <li>Blood Pressure</li>
+          <li>Blood Glucose / Sugar Level</li>
+          <li>Body Weight</li>
+        </ul>
+        <p>Come and visit us!</p>
+      </section>
   
+      <section id="monthly-medicines-delivery">
+        <h2>Monthly Medicines Delivery</h2>
+        <p>Send us your prescription, and we will deliver your medicines according to the desired dosage and inform you when your next supplies are due.</p>
+      </section>
+  
+      <section id="home-delivery">
+        <h2>Home Delivery</h2>
+        <p>We will deliver our products to your doorstep. Just give us a call. For orders above PKR 5,000, delivery is free. For orders below 5,000, charges will be at actual.</p>
+      </section>
+    
+  
+      <div class="hero-section6">
+          <div class="main6">
+              <img src="./Images/LOGO FILE_orginal_orginal.png" alt="">
+              <p>We believe in Simple, Creative & <br>
+                  Flexible Design Standards.
+  
+                  Headquarters: <br>
+                  795 Folsom Ave, Suite 600 <br>
+                  San Francisco, CA 94107 <br>
+                  Phone: (1) 8547 632521 <br>
+                  Fax: (1) 11 4752 1433 <br>
+                  Email: info@canvas.com</p>
+              </div>
+              <div class="footer1">
+  
+                  <li><a href="./">Home</a></li>
+                  <li><a href="./About.html">About Us</a></li>
+                  <li><a href="./Services.html">Services</a></li>
+                  <li><a href="./Products.html">Products</a></li>
+                  <li><a href="./Contact.html">Contact US</a></li>
+              </div>
+              <div class="main6-email">
+                  <span></span><input type="email" placeholder="Enter your Email">
+                  <button>Subscribe</button>
+  
+             
+              </div>
+          </div>
+  
+  
+      </div>
+      <footer>
+          <div class="footer2">
+              <p> Copyright &copy;2022 ThemexHunter. All Rights Reserved</p>
+              <div id="icons1">
+                  <i class="fa-brands fa-square-facebook"><a href="./"></a></i>
+                  <i class="fa-brands fa-instagram"></i>
+              </div>
+          </div>
+      </footer>
 
-    <div class="hero-section6">
-        <div class="main6">
-            <img src="./Images/LOGO FILE_orginal_orginal.png" alt="">
-            <p>We believe in Simple, Creative & <br>
-                Flexible Design Standards.
-
-                Headquarters: <br>
-                795 Folsom Ave, Suite 600 <br>
-                San Francisco, CA 94107 <br>
-                Phone: (1) 8547 632521 <br>
-                Fax: (1) 11 4752 1433 <br>
-                Email: info@canvas.com</p>
-            </div>
-            <div class="footer1">
-
-                <li><a href="./">Home</a></li>
-                <li><a href="./About.html">About Us</a></li>
-                <li><a href="./Services.html">Services</a></li>
-                <li><a href="./Products.html">Products</a></li>
-                <li><a href="./Contact.html">Contact US</a></li>
-            </div>
-            <div class="main6-email">
-                <span></span><input type="email" placeholder="Enter your Email">
-                <button>Subscribe</button>
-
-           
-            </div>
-        </div>
-
-
-    </div>
-    <footer>
-        <div class="footer2">
-            <p> Copyright &copy;2022 ThemexHunter. All Rights Reserved</p>
-            <div id="icons1">
-                <i class="fa-brands fa-square-facebook"><a href="./"></a></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-        </div>
-    </footer>
+    
 </body>
 </html>

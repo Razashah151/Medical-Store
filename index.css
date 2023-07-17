@@ -1,3 +1,6 @@
+body{
+  user-select: none;
+}
 *{box-sizing: border-box}
 .mySlides {
     display: none
@@ -97,6 +100,17 @@
     justify-content: space-evenly;
 
 }
+.main-heading{
+ text-align: center;
+}
+.main-heading>h1{
+  color: rgb(0, 0, 190);
+  font-size: 60px;
+}
+.main-heading>h3{
+  color: green;
+  font-size: 30px;
+}
 .navbar{
     display: flex;
     list-style-type: none;
@@ -108,8 +122,74 @@ li a{
     display: flex;
    color:#4d4b5a;
 }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar li {
+        display: inline-block;
+        position: relative;
+    }
+
+    .navbar li a {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .navbar li:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+
 .sidebar{
     display: none;
+}
+#top-section{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+}
+.fa-solid{
+  color: greenyellow;
+  font-size: 50px;
+}
+.prices>p{
+  color: green;
+}
+.main2-content{
+text-align: center;
+}
+.main2-content>h3{
+color: rgb(0, 0, 190);
+}
+.main2-content>p{
+  font-size: 20px;
 }
 .hero-section2{
     display: flex;
@@ -122,6 +202,7 @@ li a{
   flex-wrap: wrap;
   justify-content: center;
   gap: 100px;
+  flex-direction: column;
 
 }
 .main2-image>img{
@@ -154,6 +235,7 @@ li a{
 .hero-section3{
     display: flex;
     justify-content: center;
+    flex-direction: column;
    
 }
 .main3{
@@ -166,6 +248,7 @@ li a{
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 .first-block{
     background-color: white;
@@ -262,8 +345,10 @@ li a{
   color: white;
   background-color: #717171;
 }
-#icons1{
-  padding: 0px 20px;
+
+.fa-brands{
+  padding: 10px;
+  font-size: 20px;
 }
 .hero-section7 {
   display: flex;
@@ -276,11 +361,18 @@ li a{
 }
 .main7 {
   display: flex;
+  flex-wrap: wrap;
 }
 .main7-content1{
 text-align: center;
 }
-
+.main7-content1>h3{
+  color: rgb(0, 0, 190);
+}
+.main7-content2>li{
+  font-size: 20px;
+  color: rgb(0, 190, 3);
+}
 img {
   max-width: 100%;
 }
@@ -291,6 +383,9 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.main8-content2>h3,h4{
+  color: rgb(0, 0, 190);
 }
 .main8-content2>img{
   width: 400px;
@@ -316,6 +411,10 @@ img {
   display: flex;
   justify-content: center;
 }
+.main9-content1>h3{
+  color: rgb(0, 0, 190);
+  font-size: 30px;
+}
 
 .hero-section10{
   display: flex;
@@ -334,6 +433,7 @@ flex-direction: column;
 display: flex;
 justify-content: center;
 align-items: center;
+
 animation: slide-in 1s forwards;
 opacity: 0;
   transform: translateY(100px); /* Adjust the value to change the distance of the animation */
@@ -357,12 +457,15 @@ opacity: 0;
 .main12{
   display: flex;
   justify-content:center;
+  flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  gap: 150px;
+
+  
 }
 .main12-content1{
   display: flex;
+
 
 }
 .main12-content2{
@@ -370,14 +473,21 @@ opacity: 0;
   justify-content: center;
   flex-direction: column;
 }
+.main12-content2>p{
+  text-align: center;
+}
+.main12-content2>h3{
+  text-align: center;
+   color: rgb(0, 0, 190);
+   font-size: 25px;
+}
 .main12-content1>img{
   width: 400px;
 }
 .main12-content2>img{
 width: 400px;
 }
-@media screen and (max-width:600px) and (min-width:100px) {
-
+@media screen and (max-width:800px) and (min-width:100px) {
   .main11{
       display: block;
     
@@ -410,6 +520,7 @@ width: 400px;
      color: black;
      
  }
+ 
  
 }
 @media screen and (max-width:1300px) and (min-width:100px) {

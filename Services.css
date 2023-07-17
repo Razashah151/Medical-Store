@@ -1,11 +1,15 @@
 body {
     padding-left: 20px;
     animation: slide-in 1s forwards;
+   
+      user-select: none;
+    
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: #333; /* Dark gray text color for headings */
+    color: rgb(0, 0, 190);
   }
+  
 
   @keyframes slide-in {
     from {
@@ -19,37 +23,107 @@ body {
     width: 100px;
 }
 .main11>img{
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    border-radius: 200px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 200px;
 }
 .main11{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-evenly;
 
 }
+.main-heading{
+text-align: center;
+}
+.main-heading>h1{
+color: rgb(0, 0, 190);
+font-size: 60px;
+}
+.main-heading>h3{
+color: green;
+font-size: 30px;
+}
 .navbar{
-    display: flex;
-    list-style-type: none;
-    padding: 20px;
+  display: flex;
+  list-style-type: none;
+  padding: 20px;
 }
 li a{
-    text-decoration: none;
-    padding: 20px;
-    display: flex;
-   color:#4d4b5a;
+  text-decoration: none;
+  padding: 20px;
+  display: flex;
+ color:#4d4b5a;
 }
+
+  .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  .navbar li {
+      display: inline-block;
+      position: relative;
+  }
+
+  .navbar li a {
+      display: block;
+      padding: 8px 16px;
+      text-decoration: none;
+      color: #000;
+  }
+
+  .navbar li:hover .dropdown-content {
+      display: block;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+  }
+
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  .dropdown-content a:hover {
+      background-color: #f1f1f1;
+  }
+
+
 .sidebar{
-    display: none;
+  display: none;
 }
 .hero-section1{
     display: flex;
     justify-content: center;
 
+}
+#health-assessment{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#monthly-medicines-delivery{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#home-delivery{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .hero-section6{
     background-color: #717171;
@@ -106,8 +180,8 @@ li a{
     padding: 10px;
   }
   
-@media screen and (max-width:600px) and (min-width:100px) {
-
+  
+  @media screen and (max-width:800px) and (min-width:100px) {
     .main11{
         display: block;
       
@@ -140,4 +214,6 @@ li a{
        color: black;
        
    }
+   
+   
   }

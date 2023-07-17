@@ -1,3 +1,7 @@
+body{
+  user-select: none;
+}
+
 .main11>img{
   width: 100px;
   display: flex;
@@ -12,6 +16,9 @@
   justify-content: space-evenly;
 
 }
+.main-heading{
+text-align: center;
+}
 .navbar{
   display: flex;
   list-style-type: none;
@@ -23,12 +30,66 @@ li a{
   display: flex;
  color:#4d4b5a;
 }
+
+  .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  .navbar li {
+      display: inline-block;
+      position: relative;
+  }
+
+  .navbar li a {
+      display: block;
+      padding: 8px 16px;
+      text-decoration: none;
+      color: #000;
+  }
+
+  .navbar li:hover .dropdown-content {
+      display: block;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+  }
+
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  .dropdown-content a:hover {
+      background-color: #f1f1f1;
+  }
+
+
 .sidebar{
   display: none;
 }
 
 
+.section-title>h2{
+  color: rgb(0, 0, 190);
+}
 
+#whatsapp{
+  background-color: green;
+  color: white;
+   border: none;
+   padding: 15px;
+   border-radius: 10px;
+}
 .hero-section6{
   background-color: #717171;
   display: flex;
@@ -95,7 +156,7 @@ li a{
 #icons1{
   padding: 0px 20px;
 }
-@media screen and (max-width:600px) and (min-width:100px) {
+@media screen and (max-width:800px) and (min-width:100px) {
 
   .main11{
       display: block;
