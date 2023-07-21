@@ -1,8 +1,21 @@
 body{
   user-select: none;
+  font-family: 'Inter', sans-serif;
+}
+.map-area {
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
-.main11>img{
+.map-area iframe {
+
+  width:800px;
+height: 500px;
+
+}
+
+.first-image>img{
   width: 100px;
   display: flex;
   justify-content: center;
@@ -82,9 +95,26 @@ li a{
 .section-title>h2{
   color: rgb(0, 0, 190);
 }
-
+.buttons{
+  display: flex;
+justify-content: space-evenly;
+}
 #whatsapp{
   background-color: green;
+  color: white;
+   border: none;
+   padding: 15px;
+   border-radius: 10px;
+}
+#instagram{
+  background-color: rgb(214, 86, 108);
+  color: white;
+   border: none;
+   padding: 15px;
+   border-radius: 10px;
+}
+#facebook{
+  background-color: blue;
   color: white;
    border: none;
    padding: 15px;
@@ -112,7 +142,8 @@ li a{
 .footer1{
   list-style-type: none;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap
+  ;
   justify-content: center;
   align-items: center;
 }
@@ -153,8 +184,10 @@ li a{
   color: white;
   background-color: #717171;
 }
-#icons1{
-  padding: 0px 20px;
+
+.fa-brands{
+  padding: 10px;
+  font-size: 20px;
 }
 @media screen and (max-width:800px) and (min-width:100px) {
 

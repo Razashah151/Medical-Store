@@ -1,7 +1,8 @@
 body{
   user-select: none;
+  font-family: 'Inter', sans-serif;
 }
-.main11>img{
+.first-image>img{
   width: 100px;
   display: flex;
   justify-content: center;
@@ -118,7 +119,8 @@ li a{
   .footer1{
     list-style-type: none;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap
+    ;
     justify-content: center;
     align-items: center;
   }
@@ -159,8 +161,10 @@ li a{
     color: white;
     background-color: #717171;
   }
-  #icons1{
-    padding: 0px 20px;
+  
+  .fa-brands{
+    padding: 10px;
+    font-size: 20px;
   }
   @media screen and (max-width:800px) and (min-width:100px) {
     .main11{

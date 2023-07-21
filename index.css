@@ -1,5 +1,6 @@
 body{
   user-select: none;
+  font-family: 'Inter', sans-serif;
 }
 *{box-sizing: border-box}
 .mySlides {
@@ -86,7 +87,7 @@ body{
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }
-  .main11>img{
+  .first-image>img{
     width: 100px;
     display: flex;
     justify-content: center;
@@ -105,11 +106,11 @@ body{
 }
 .main-heading>h1{
   color: rgb(0, 0, 190);
-  font-size: 60px;
+  font-size: 50px;
 }
 .main-heading>h3{
   color: green;
-  font-size: 30px;
+  font-size: 20px;
 }
 .navbar{
     display: flex;
@@ -304,7 +305,8 @@ color: rgb(0, 0, 190);
 .footer1{
   list-style-type: none;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap
+  ;
   justify-content: center;
   align-items: center;
 }
